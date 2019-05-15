@@ -389,9 +389,41 @@ public class Game {
 			case "yuh":
 				switch(yourChoice){
 				case "c1": replayIntroduction(); 
+				try {
+					ausdio a=new ausdio("");
+					a.play();
+					}
+					catch(Exception e) {
+						System.out.println(e.getMessage());
+					}
+				break;
 				case "c2": replayIntroduction(); 
+				try {
+					ausdio a=new ausdio("");
+					a.play();
+					}
+					catch(Exception e) {
+						System.out.println(e.getMessage());
+					}
+				break;
 				case "c3": replayIntroduction(); 
+				try {
+					ausdio a=new ausdio("");
+					a.play();
+					}
+					catch(Exception e) {
+						System.out.println(e.getMessage());
+					}
+				break;
 				case "c4": replayIntroduction(); 
+				try {
+					ausdio a=new ausdio("");
+					a.play();
+					}
+					catch(Exception e) {
+						System.out.println(e.getMessage());
+					}
+				break;
 					}
 				break;
 			case "introduction":
