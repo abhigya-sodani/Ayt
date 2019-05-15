@@ -279,9 +279,7 @@ public class Game {
 	}
 	
 	public void battle(){
-		JTextField t1,t2, t3;  
-	    
-
+		    
 		mainTextArea.setText("Battle Stage");
 		position = "battle";
 		int count = 0;
@@ -297,14 +295,15 @@ public class Game {
 			ArrayList rhymes=a.rhymes;
 			input = JOptionPane.showInputDialog("input");
 			if(rhymes.contains(input.toLowerCase().replaceAll(" ","" ).replaceAll("'","").replaceAll("-", ""))) {
-				JOptionPane.showMessageDialog(null, "Thats a rhyme!");
 				wins++;
-				count++;		
+				count++;	
+				JOptionPane.showMessageDialog(null, "Thats a rhyme! \n Attempts: " + count + "\n # Correct: " + wins +"\n # Wrong: " + losses);	
 			}
 			else {
-				JOptionPane.showMessageDialog(null, "Lmao Nope!");
-				wins--;
-				count--;
+				losses++;
+				count++;
+				JOptionPane.showMessageDialog(null, "Lmao Nope! \n Attempts: " + count + "\n # Correct: " + wins +"\n # Wrong: " + losses);
+				
 			}
 	}
 		if(wins>losses) {
