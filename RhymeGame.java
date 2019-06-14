@@ -48,7 +48,7 @@ public class RhymeGame{
 				in.next();
 			} 
 			word=in.next();
-			while((word.length()<5||word.contains("fuck")||word.contains("shit")||word.contains("pussy"))) {
+			while((word.length()<5||word.contains("shit")||word.contains("pussy"))) {
 				word=in.next();
 			}
 			return word;
